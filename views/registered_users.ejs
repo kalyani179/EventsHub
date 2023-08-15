@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>
+                    SNO
+                </th>
+
+                <th>
+                    USERNAME
+                </th>
+                <th>
+                    EMAIL
+                </th>
+                <th>
+                    REGISTERED EVENT
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0;i<data.length;i++){ %>
+                <tr>
+                    <td>
+                        <%-i+1-%>
+                    </td>
+
+                    <td>
+                        <%=data[i].username%>
+                    </td>
+                    <td>
+                        <%=data[i].email%>
+                    </td>
+                    <td>
+                        <%=data[i].eventName%>
+                    </td>
+
+                </tr>
+
+                <%}%>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<%-include("partials/header")-%>
+    <div class="forms register-form">
+        <form action="/speakerRegistration" method="post" enctype="multipart/form-data">
+            <div class="form-group conduct-event">
+                <input type="text" name="speakerName" class="form-control register-input" placeholder="Enter Speaker Name" autofocus autocomplete="on">
+                <label for="exampleFormControlTextarea1">Speaker Image : </label>
+                <input type="file" name="speakerImage" class="form-control register-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your image" autocomplete="on">
+                <label for="exampleFormControlTextarea1">Event Banner : </label>
+                <input type="file" name="eventBanner" class="form-control register-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Banner" autocomplete="on">
+                <label for="exampleFormControlTextarea1">About The Event : </label>
+                <textarea name="aboutEvent" class="form-control register-input" id="exampleFormControlTextarea1" rows="5" cols="10"></textarea>
+            </div>
+            <button type="submit" class="btn registerbtn">Submit</button>
+        </form>
+    </div>
+    </body>

@@ -1,0 +1,89 @@
+<%-include("partials/header")-%>
+    <div style="padding-top: 80px;">
+        <%if(message.length>0){%>
+            <a href="/home" style="text-decoration: none; text-transform: uppercase; ">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong><%=message%></strong>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </a>
+
+            <%}%>
+    </div>
+
+    <h2 class="heading liveEvents">
+        Live/Upcoming Events
+    </h2>
+
+    <div class="container">
+        <% for(var i = 0;i<data.length;i++) {%>
+            <%if(data[i].presentDates.length>0){%>
+                <div class="child-container">
+                    <%if(data[i].presentImages.length>0){%>
+                        <a href="/innerEventPage" target="_"><img class="eventImage" src="<%=data[i].presentImages%>"></a>
+                        <%}%>
+                            <h3 class="eventName">
+                                <%=data[i].presentEventName%>
+                            </h3>
+
+                            <h6 class="eventDate">
+                                <strong> Date :
+                    <%=data[i].presentDates%> 
+                    <% if(data[i].presentTimes.length>0 && data[i].presentTimes.substring(0,2)<=12){ %>
+                        <%=data[i].presentTimes%> AM
+                        
+                    <%} %>
+                    <% if(data[i].presentTimes.length>0 && data[i].presentTimes.substring(0,2)>12){ %>
+                        <%=data[i].presentTimes%> PM
+                    <%} %>
+                    </strong>
+                            </h6>
+
+
+                </div>
+                <% } %>
+                    <% } %>
+
+    </div>
+    <h2 class="heading">
+        Past Events
+    </h2>
+
+    <div class="container">
+        <% for(var i = 0;i<data.length;i++) {%>
+            <%if(data[i].pastDates.length>0){%>
+                <div class="child-container">
+
+                    <%if(data[i].pastImages.length>0){%>
+                        <a href="/innerEventPage" target="_"><img class="eventImage" src="<%=data[i].pastImages%>"></a>
+                        <%}%>
+                            <h3 class="eventName">
+                                <% if(data[i].pastEventName.length>0){%>
+                                    <%=data[i].pastEventName%>
+                                        <%}%>
+                            </h3>
+                            <%if(data[i].pastDates.length>0){%>
+                                <h6 class="eventDate">
+                                    <strong> Date :
+                    <%=data[i].pastDates%> 
+                    <% if(data[i].pastTimes.length>0 && data[i].pastTimes.substring(0,2)<=12){ %>
+                        <%=data[i].pastTimes%> AM
+                        
+                    <%} %>
+                    <% if(data[i].pastTimes.length>0 && data[i].pastTimes.substring(0,2)>12){ %>
+                        <%=data[i].pastTimes%> PM
+                    <%} %>
+                    </strong>
+                                </h6>
+                                <%}%>
+
+
+                </div>
+                <%}%>
+                    <% } %>
+
+    </div>
+
+
+    <%-include("partials/footer")-%>

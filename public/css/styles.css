@@ -1,0 +1,451 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    body {
+        background-color: #FFFBE8;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    nav {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        /* Set the navbar to fixed position */
+        top: 0;
+        /* Position the navbar at the top of the page */
+        width: 100%;
+        /* Full width */
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0px;
+        background-color: #FFFBE8;
+        letter-spacing: 2px;
+        padding: 15px 35px 15px 30px;
+        font-family: 'Cabin', sans-serif;
+        transition: 0.2s all ease-in-out;
+        box-shadow: 0px 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+    }
+    
+    .navbar-brand {
+        font-size: 170%;
+    }
+    
+    .navbar-nav li a:hover {
+        color: black !important;
+        transform: scale(1.05);
+    }
+    
+    .nav-item {
+        padding-left: 20px;
+        font-size: large;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1.5px;
+    }
+    
+    .footer {
+        margin: 5%;
+        margin-left: 0;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .btn {
+        margin-top: 3%;
+        margin-left: 40%;
+        font-family: 'Poppins', sans-serif;
+        box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        transition: 0.2s all ease-in-out;
+        background-color: #FCDDB0;
+    }
+    
+    .event-button {
+        margin: 0;
+        margin-left: -5%;
+    }
+    
+    .register-button {
+        margin: 0;
+        margin-top: -6%;
+        background-color: #FFFBE8;
+    }
+    /*** contact Styles **/
+    
+    .forms {
+        margin-top: 5%;
+        width: 30%;
+        margin-left: -10%;
+    }
+    
+    .form-control {
+        margin-top: 2%;
+        margin-bottom: 6%;
+    }
+    
+    .conduct-event {
+        margin-top: 25%;
+    }
+    
+    .registerbtn {
+        margin-left: 75%;
+    }
+    
+    .btn:hover {
+        box-shadow: 0 1rem 1rem -0.7rem black;
+        transform: scale(1.05);
+    }
+    
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20%;
+        height: 220px;
+    }
+    
+    img {
+        height: 400px;
+        width: 400px;
+    }
+    
+    .liveEvents {
+        margin-top: 1%;
+    }
+    
+    .message {
+        margin-top: 17%;
+    }
+    
+    .heading {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 4%;
+        margin-bottom: 2%;
+        padding-right: 2.5%;
+    }
+    
+    .keyPointHeading {
+        padding-top: 1%;
+    }
+    
+    .image {
+        padding-top: 3%;
+        padding-left: 10%;
+    }
+    
+    label {
+        letter-spacing: 0.5px;
+        padding-bottom: 1%;
+    }
+    /** register form **/
+    
+    .register-form {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-left: -10%;
+    }
+    
+    .register-input {
+        width: 200%;
+    }
+    
+    .keyPoints {
+        margin: 2% 3%;
+    }
+    /*** events HOME ***/
+    
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .child-container {
+        height: 552px;
+        width: 336px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        padding: 2%;
+        box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+    
+    .eventImage {
+        width: 310px;
+        height: 398px;
+    }
+    
+    .eventName {
+        padding: 5% 0 3% 0;
+    }
+    /*** User Registration ***/
+    
+    .user-registration {
+        background-color: white;
+        width: 600px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+        margin: auto;
+        border-radius: 50px;
+    }
+    
+    .registration-div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    /*** Inner Page ***/
+    
+    .innerPageBody {
+        background-color: black;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        color: white;
+        gap: 10px;
+    }
+    
+    .banner-div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        width: 970px;
+        background-color: #222;
+        margin-top: 3%;
+        border-radius: 20px;
+        margin-left: 15%;
+    }
+    
+    .banner {
+        align-items: center;
+        height: 480px;
+        width: 970px;
+    }
+    
+    .event-name-div {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    
+    .event-name {
+        font-weight: 800px;
+    }
+    
+    .date-time {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding-left: 10px;
+        margin-bottom: 2%;
+        border-bottom: 20px;
+    }
+    
+    .about {
+        background-color: #222;
+        width: 600px;
+        padding: 20px;
+        padding-left: 30px;
+        border-radius: 20px;
+        margin-bottom: 3%;
+    }
+    
+    .about-content {
+        margin-top: 5%;
+    }
+    
+    .register-banner {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 1%;
+        width: 600px;
+        margin-bottom: 2%;
+        margin-left: 0;
+    }
+    
+    .inner-page-register-btn {
+        margin: 0;
+        background-color: white;
+        width: 50%;
+        height: 50px;
+        margin-left: 25%;
+    }
+    
+    .middle-div {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 1%;
+        margin-left: 15%;
+    }
+    
+    .key-points {
+        background-color: #222;
+        width: 350px;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 0.5%;
+    }
+    
+    .speaker-details {
+        font-family: 'Poppins';
+        margin-top: 2%;
+        background-color: #222;
+        border-radius: 20px;
+        margin-bottom: 3%;
+    }
+    
+    .speaker-image-name-div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+    
+    .speakerImage {
+        height: 250px;
+        width: 250px;
+    }
+    
+    .side-div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    /** popup **/
+    
+    .popup {
+        background: rgba(0, 0, 0, 0.6);
+        width: 100vw;
+        height: 100vw;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        visibility: hidden;
+        margin-left: 15%;
+    }
+    
+    .popup-content {
+        height: 410px;
+        width: 500px;
+        background: #F5F5F5;
+        padding: 20px;
+        border-radius: 20px;
+        position: relative;
+        top: 550px;
+        right: 250px;
+        padding-top: 40px;
+    }
+    
+    .input-user-details {
+        margin: 20px auto;
+        display: block;
+        width: 50%;
+        padding: 5px;
+        border: 1px solid gray;
+    }
+    
+    .profile-user {
+        height: 90px;
+        width: 90px;
+    }
+    
+    .close-img {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        background: #fff;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        box-shadow: 6px 6px 20px -4px rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+    }
+    
+    .register-event-btn {
+        background-color: blue;
+        margin-left: -15px;
+    }
+    /**admin Options**/
+    
+    .adminOptions-div {
+        background-color: #FFFBE8;
+        width: 50%;
+        height: 300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: 13%;
+        border-radius: 20px;
+        gap: 40px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    }
+    
+    .adminOptionbtn {
+        margin: 0;
+    }
+    
+    .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 1.35em;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    .content-table thead tr {
+        background-color: #009879;
+        color: #fff;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .content-table th,
+    .content-table td {
+        padding: 12px 15px;
+        font-family: "Poppins";
+    }
+    
+    .content-table tbody tr {
+        border-bottom: 1px solid #666;
+    }
+    
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }

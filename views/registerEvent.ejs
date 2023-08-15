@@ -1,0 +1,16 @@
+<%-include("partials/header")-%>
+    <div class="forms register-form">
+        <form action="/registerForm" method="post" enctype="multipart/form-data">
+            <div class="form-group conduct-event">
+                <input type="text" name="eventName" class="form-control register-input" placeholder="Enter the Event Name" autofocus autocomplete="on">
+                <input type="date" name="date" min=<%=presentDate%> class="form-control register-input" placeholder="Enter The Date" autofocus autocomplete="off">
+                <input type="time" name="time" min=<%=presentTime%> class="form-control register-input" placeholder="Enter The Time" autofocus autocomplete="off">
+                <input type="file" name="image" class="form-control register-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Banner" autocomplete="on">
+                <label for="exampleFormControlTextarea1">Key-Deliverables Of Your Event : </label>
+                <textarea name="keyPoints" class="form-control register-input" id="exampleFormControlTextarea1" rows="5" cols="10"></textarea>
+            </div>
+            <button type="submit" class="btn registerbtn">Submit</button>
+        </form>
+    </div>
+
+    </body>
